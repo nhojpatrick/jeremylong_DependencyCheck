@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-VERSION=$(mvn -q \
+VERSION=$(./mvnw -q \
     -Dexec.executable="echo" \
     -Dexec.args='${project.version}' \
     --non-recursive \

@@ -52,8 +52,8 @@ $ dependency-check --out . --scan [path to jar files to be scanned]
 ### Maven Plugin
 
 More detailed instructions can be found on the [dependency-check-maven github pages](http://jeremylong.github.io/DependencyCheck/dependency-check-maven).
-By default, the plugin is tied to the `verify` phase (i.e. `mvn verify`). Alternatively,
-one can directly invoke the plugin via `mvn org.owasp:dependency-check-maven:check`.
+By default, the plugin is tied to the `verify` phase (i.e. `./mvnw verify`). Alternatively,
+one can directly invoke the plugin via `./mvnw org.owasp:dependency-check-maven:check`.
 
 The dependency-check plugin can be configured using the following:
 
@@ -112,13 +112,13 @@ git clone --depth 1 https://github.com/jeremylong/DependencyCheck.git
 
 On *nix
 ```
-$ mvn -s settings.xml install
+$ ./mvnw -s settings.xml install
 $ ./cli/target/release/bin/dependency-check.sh -h
 $ ./cli/target/release/bin/dependency-check.sh --out . --scan ./src/test/resources
 ```
 On Windows
 ```
-> mvn -s settings.xml install
+> ./mvnw.cmd -s settings.xml install
 > .\cli\target\release\bin\dependency-check.bat -h
 > .\cli\target\release\bin\dependency-check.bat --out . --scan ./src/test/resources
 ```
@@ -206,7 +206,7 @@ Building From Source
 To build dependency-check run the command:
 
 ```
-mvn -s settings.xml install
+./mvnw -s settings.xml install
 ```
 
 Mailing List

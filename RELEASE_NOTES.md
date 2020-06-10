@@ -233,7 +233,7 @@ Please see the [dependency-check google group](https://groups.google.com/forum/#
   ```groovy
   stage ('Build') {
     steps {
-      sh 'mvn verify'
+      sh './mvnw verify'
     }
     post {
       success {

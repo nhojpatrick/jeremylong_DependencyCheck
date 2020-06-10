@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-VERSION=$(mvn -q \
+VERSION=$(./mvnw -q \
     -Dexec.executable="echo" \
     -Dexec.args='${project.version}' \
     --non-recursive \
@@ -13,6 +13,6 @@ if [ -f "$FILE" ]; then
         docker tag owasp/dependency-check:$VERSION owasp/dependency-check:latest
     fi
 else 
-    echo "$FILE does not exist - run 'mvn package' first"
+    echo "$FILE does not exist - run './mvnw package' first"
     exit 1
 fi

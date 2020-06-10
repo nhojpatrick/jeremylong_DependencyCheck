@@ -13,7 +13,7 @@ seven days the update will only take a few seconds.
 ### Default Phase
 The dependency-check plugin is, by default, tied to the `verify` or `site` phase
 depending on if it is configured as a build or reporting plugin. The examples
-below can be executed using `mvn verify` or in the reporting example `mvn site`.
+below can be executed using `./mvnw verify` or in the reporting example `./mvnw site`.
 
 #set( $H = '#' )
 
