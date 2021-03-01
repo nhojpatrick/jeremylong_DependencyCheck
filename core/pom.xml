@@ -415,7 +415,7 @@ Copyright (c) 2012 Jeremy Long. All Rights Reserved.
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
-            <version>3.0</version>
+            <version>5.0.1</version>
             <scope>test</scope>
             <optional>true</optional>
         </dependency>
@@ -639,7 +639,7 @@ Copyright (c) 2012 Jeremy Long. All Rights Reserved.
                 <dependency>
                     <groupId>com.google.inject</groupId>
                     <artifactId>guice</artifactId>
-                    <version>3.0</version>
+                    <version>5.0.1</version>
                     <scope>test</scope>
                     <optional>true</optional>
                 </dependency>
